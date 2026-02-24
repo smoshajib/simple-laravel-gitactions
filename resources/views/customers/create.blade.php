@@ -16,6 +16,10 @@
             <input type="text" name="phone" class="form-control">
         </div>
         <div class="mb-3">
+            <label>Age</label>
+            <input type="text" name="age" class="form-control">
+        </div>
+        <div class="mb-3">
             <label>Image</label>
             <input type="file" name="image" class="form-control">
         </div>

@@ -7,6 +7,7 @@
             <p><strong>Name:</strong> {{ $customer->name }}</p>
             <p><strong>Email:</strong> {{ $customer->email }}</p>
             <p><strong>Phone:</strong> {{ $customer->phone }}</p>
+            <p><strong>Age:</strong> {{ $customer->age }}</p>
             <p><strong>Image:</strong></p>
             @if($customer->image)
                 <img src="{{ asset('storage/customers/'.$customer->image) }}" width="200">

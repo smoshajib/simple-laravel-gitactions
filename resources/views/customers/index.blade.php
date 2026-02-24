@@ -9,6 +9,7 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
+                <th>Age</th>
                 <th>Image</th>
                 <th>Actions</th>
             </tr>
@@ -20,6 +21,7 @@
                 <td>{{ $customer->name }}</td>
                 <td>{{ $customer->email }}</td>
                 <td>{{ $customer->phone }}</td>
+                <td>{{ $customer->age }}</td>
                 <td>
                     @if($customer->image)
                         <img src="{{ asset('storage/customers/'.$customer->image) }}" width="50">

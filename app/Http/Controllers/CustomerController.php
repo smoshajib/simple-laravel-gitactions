@@ -28,10 +28,11 @@ class CustomerController extends Controller
             'name'  => 'required',
             'email' => 'required|email|unique:customers',
             'phone' => 'nullable',
+            'age' => 'nullable',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
-        $data = $request->only(['name', 'email', 'phone']);
+        $data = $request->only(['name', 'email', 'phone','age']);
 
         if ($request->hasFile('image')) {
             $path = $request->file('image')->store('customers', 'public');
@@ -59,10 +60,11 @@ class CustomerController extends Controller
             'name'  => 'required',
             'email' => 'required|email|unique:customers,email,' . $customer->id,
             'phone' => 'nullable',
+            'age' => 'nullable',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
-        $data = $request->only(['name', 'email', 'phone']);
+        $data = $request->only(['name', 'email', 'phone','age']);
 
         if ($request->hasFile('image')) {
            

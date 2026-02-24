@@ -16,6 +16,10 @@
             <input type="text" name="phone" value="{{ $customer->phone }}" class="form-control">
         </div>
         <div class="mb-3">
+            <label>Age</label>
+            <input type="text" name="age" value="{{ $customer->age }}" class="form-control">
+        </div>
+        <div class="mb-3">
             <label>Image</label>
             <input type="file" name="image" class="form-control">
             @if($customer->image)
